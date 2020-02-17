@@ -6,54 +6,46 @@
 <body>
 <form method="post" action="miservidor.php">
     <div>
-      <label for="nombre">Nombre:</label>
-      <input id="nombre" type="text">
+      <label for="codigo_postal">Código Postal:</label>
+      <input id="codigo_postal" type="text">
     </div>
-    <div>
-      <label for="ape1">Primer apellido:</label>
-      <input id="ape1" type="text">
-    </div>
-    <div>
-      <label for="ape2">Segundo apellido:</label>
-      <input id="ape2" type="text">
-    </div>
-    <div>
-      <label for="edad">Edad:</label>
-      <input id="edad" type="number">
-    </div>
-    <div>
-      <label for="lugar">Lugar de nacimiento:</label>
-      <input id="lugar" type="text">
-   </div>
-   <div>
-      <label for="pais">Pais de nacimiento:</label>
-      <select id="pais">
-        <option value="ES">España</option>
-        <option value="IT">Italia</option>
-        <option value="FR">Francia</option>
-      </select>
-  </div>
-  <div>
-      <label for="sexo">Sexo:</label>
-      <input name="sexo" type="radio" value="M">Masculino
-      <input name="sexo" type="radio" value="F">Femenino
-  </div>
-  <div>
-      <label for="hermanos">Número de hermanos:</label>
-      <select id="hermanos">
+      <div>
+      <label for="satisfaccion">Nivel de Satisfacción:</label>
+      <select id="satisfaccion">
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
         <option value="4">4</option>
         <option value="5">5</option>
-        <option value="6">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
+      </select>
+    </div>
+    <div>
+      <label for="email">E-mail:</label>
+      <input id="email" type="text">
+    </div>
+    <div>
+    <label for="comentario_positivo">Comentario Positivo:</label>
+    <textarea id="comentario_positivo"></textarea>
+    </div>
+    <div>
+    <label for="comentario_negativo">Comentario Negativo:</label>
+    <textarea id="comentario_negativo"></textarea>
+    </div>
+   <div>
+      <label for="caracteristicas1">Características 1:</label>
+      <select id="caracteristicas1">
+        <option value="Excelente">Excelente</option>
+        <option value="Bueno">Bueno</option>
+        <option value="Regular">Regular</option>
+        <option value="Pesimo">Pésimo</option>
       </select>
   </div>
   <div>
-    <label for="comentario">Comentario adicional:</label>
-    <textarea id="comentario"></textarea>
+      <label for="caracteristicas2">Características 2:</label>
+      <input name="caracteristicas2" type="radio" value="Excelente">Excelente
+      <input name="caracteristicas2" type="radio" value="Bueno">Bueno
+      <input name="caracteristicas2" type="radio" value="Regular">Regular
+      <input name="caracteristicas2" type="radio" value="Pésimo">Pésimo
   </div>
   <input type="submit" value="Enviar"> 
 </form>
